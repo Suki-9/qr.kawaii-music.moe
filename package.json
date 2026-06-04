@@ -1,0 +1,30 @@
+{
+  "name": "qr-kawaii-music-moe",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
+    "deploy": "vite build --emptyOutDir && wrangler pages deploy dist --project-name qr-kawaii-music-moe"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.1.1",
+    "@tsconfig/svelte": "^5.0.7",
+    "@types/node": "^24.0.0",
+    "@types/pako": "^2.0.3",
+    "svelte": "^5.50.0",
+    "svelte-check": "^4.3.6",
+    "tslib": "^2.8.1",
+    "typescript": "~5.6.3",
+    "vite": "^6.4.1",
+    "wrangler": "^4"
+  },
+  "dependencies": {
+    "pako": "^2.1.0",
+    "qrcode": "^1.5.4",
+    "sass": "^1.97.3"
+  }
+}
